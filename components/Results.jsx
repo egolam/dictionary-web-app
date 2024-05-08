@@ -5,11 +5,7 @@ import Source from "./Source";
 const Results = ({ data }) => {
   return (
     <div className="w-full flex flex-col sm:space-y-10 space-y-8">
-      <Heading
-        word={data.word}
-        phonetic={data.phonetic}
-        phonetics={data.phonetics}
-      />
+      <Heading word={data.word} phonetic={data.phonetic} />
       {data.meanings.map((mean) => (
         <Meanings key={mean.partOfSpeech} mean={mean}>
           {mean.partOfSpeech}
@@ -21,4 +17,3 @@ const Results = ({ data }) => {
 };
 
 export default Results;
-    

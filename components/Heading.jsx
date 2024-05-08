@@ -1,6 +1,6 @@
 import { IoPlaySharp } from "react-icons/io5";
 
-const Heading = ({ word, phonetic, phonetics }) => {
+const Heading = ({ word, phonetic }) => {
   return (
     <div className="flex items-center justify-between">
       <div className="flex flex-col sm:gap-4">

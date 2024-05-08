@@ -27,7 +27,7 @@ const DarkModeToggle = () => {
     <div className="flex items-center space-x-5">
       <Switch
         checked={theme === "dark"}
-        onChange={() => handleTheme()}
+        onClick={() => handleTheme()}
         className={`${
           theme === "light" ? "bg-[#757575]" : "bg-[#A445ED]"
         } relative inline-flex h-6 w-11 items-center rounded-full`}
